@@ -1,0 +1,10 @@
+.login-page {
+    width: 100%;
+    /* background-color: aquamarine; */
+    /* min-height: 90vh; */
+    margin-top: 16px;
+}
+
+.login-page h1 {
+    text-align: center;
+}

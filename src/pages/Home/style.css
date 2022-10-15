@@ -1,0 +1,10 @@
+.home {
+    width: 100%;
+    /* background-color: aquamarine; */
+    /* min-height: 90vh; */
+    margin-top: 16px;
+}
+
+.home h1 {
+    text-align: center;
+}

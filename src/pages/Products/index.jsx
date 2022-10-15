@@ -1,15 +1,18 @@
 import './style.css';
 
-import { useContext } from 'react';
+/* import { useContext } from 'react'; */
 
-import { CounterContext } from '../../context/CounterContext';
+/* import { CounterContext } from '../../context/CounterContext'; */
 import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
 import ChangeCounter from '../../components/ChangeCounter';
 
+// 4 - Refatorando o context com o hook
+import { useCounterContext } from '../../hooks/useCounterContext';
 
 function Products() {
-  const { counter } = useContext(CounterContext);
+  /* const { counter } = useContext(CounterContext); */
+  const { counter } = useCounterContext();
 
   return (
     <div>

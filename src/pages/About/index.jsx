@@ -1,16 +1,19 @@
 import './style.css';
 
-import { useContext } from 'react';
+/* import { useContext } from 'react'; */
 
 import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
-import { CounterContext } from '../../context/CounterContext';
+/* import { CounterContext } from '../../context/CounterContext'; */
 import ChangeCounter from '../../components/ChangeCounter';
+
+//4 - Refatorando o contexto com o hook
+import { useCounterContext } from '../../hooks/useCounterContext';
 
 
 function About() {
-  const { counter } = useContext(CounterContext);
-
+  /* const { counter } = useContext(CounterContext);*/
+  const { counter } = useCounterContext();
   return (
     <div>
         <Navbar />
